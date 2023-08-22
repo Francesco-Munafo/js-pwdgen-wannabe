@@ -35,9 +35,9 @@ console.log('Benvenuto'+ " " + firstName + lastName + favoriteColor + userAge);
 
 //Creo una constante con il tutte le informazioni
 
-const assignedUserName = firstName + lastName + favoriteColor + userAge;
+const generatedPassword = firstName + lastName + favoriteColor + userAge;
 
 // Riportare il risultato in pagina
 
-greetingsElement.innerHTML = 'Benvenuto' + " " + assignedUserName + "" + ", questo è il nome utente che ti è stato assegnato in base alle informazioni che ci hai fornito. Piacere di conoscerti!"
+greetingsElement.innerHTML = 'Benvenuto' + " " + firstName + ", questo è la password molto sicura generata in base alle informazioni che ci hai fornito:" + " " + generatedPassword
 
