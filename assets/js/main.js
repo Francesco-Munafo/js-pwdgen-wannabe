@@ -26,6 +26,9 @@ const userAge = prompt('Inserisci la tua età')
 //Chiedi il colore preferito
 const favoriteColor = prompt('Inserisci il tuo colore preferito');
 
+//Chiedo un numero a piacere
+const favoriteNumber = prompt('Inserisci un numero a tuo piacimento es. Il tuo numero preferito')
+
 
 
 //Selezione tag tramite id
@@ -33,9 +36,13 @@ const favoriteColor = prompt('Inserisci il tuo colore preferito');
 const greetingsElement = document.getElementById('greetings');
 console.log('Benvenuto'+ " " + firstName + lastName + favoriteColor + userAge);
 
-//Creo una constante con il tutte le informazioni
+//Creo una costante con la somma dell'età + il numero preferito
 
-const generatedPassword = firstName + lastName + favoriteColor + userAge;
+const generatedNumber = Number(userAge) + Number(favoriteNumber);
+
+//Creo una constante con tutte le informazioni
+
+const generatedPassword = firstName + lastName + favoriteColor + generatedNumber;
 
 // Riportare il risultato in pagina
 
